@@ -13,6 +13,8 @@ Download the ImageNet-pretrained models at [this link](https://drive.google.com/
 
 # Train and Test
 
+Resize the frames and masks of the VSPW dataset to *480 * 720*.
+
 Edit the *.sh* files in *scripts/* and change the **$DATAROOT** to your path to VSPW. 
 
 ## Image-based methods
