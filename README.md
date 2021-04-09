@@ -43,7 +43,17 @@ TCB-OCR
 sh run_temporal_ocr.sh
 ```
 
+## Evaluation on TC and VC
 
+Change dataroot and prediction root in *TC_cal.py* and *VC_perclip.py*.
+
+```
+python TC_cal.py
+```
+
+```
+python VC_perclip.py
+```
 
 This implementation utilized [this code](https://github.com/CSAILVision/semantic-segmentation-pytorch) and [RAFT](https://github.com/princeton-vl/RAFT).
 
