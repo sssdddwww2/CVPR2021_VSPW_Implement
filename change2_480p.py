@@ -35,16 +35,16 @@ def change(DIR,video,image):
 
 
 
-p = Pool(8)
+#p = Pool(8)
 for video in sorted(os.listdir(os.path.join(DIR,'data'))):
     if video[0]=='.':
         continue
     for image in sorted(os.listdir(os.path.join(DIR,'data',video,'origin'))):
         if image[0]=='.':
             continue
-        p.apply_async(change,args=(DIR,video,image,))
-#    change(DIR,video,image)
-p.close()
-p.join()
+#        p.apply_async(change,args=(DIR,video,image,))
+        change(DIR,video,image)
+#p.close()
+#p.join()
 print('finish')
 
