@@ -11,11 +11,11 @@ Target_Dir = '/your/path/to/VSPW_480p'
 def change(DIR,video,image):
     img = Image.open(os.path.join(DIR,'data',video,'origin',image))
     w,h = img.size
-    img = img.resize((int(480*w/h),480),Image.BILINEAR)
-    img.save(os.path.join(Target_Dir,'data',video,'origin',image))
 
     if not os.path.exists(os.path.join(Target_Dir,'data',video,'origin')):
         os.makedirs(os.path.join(Target_Dir,'data',video,'origin'))
+    img = img.resize((int(480*w/h),480),Image.BILINEAR)
+    img.save(os.path.join(Target_Dir,'data',video,'origin',image))
 
     if os.path.isfile(os.path.join(DIR,'data',video,'mask',image.split('.')[0]+'.png')):
     

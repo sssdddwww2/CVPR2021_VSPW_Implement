@@ -66,8 +66,12 @@ model_raft = model_raft.cuda(gpu)
 total_TC=0.
 evaluator = Evaluator(num_class)
 for video in list_[:100]:
+    if video[0]=='.':
+        continue
     imglist_ = sorted(os.listdir(os.path.join(data_dir,video,'origin')))
     for i,img in enumerate(imglist_[:-1]):
+        if img[0]=='.':
+            continue
         #print('processing video : {} image: {}'.format(video,img))
         next_img = imglist_[i+1]
         imgname = img

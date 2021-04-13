@@ -39,6 +39,8 @@ clip_num=16
 
 
 for video in videolist:
+    if video[0]=='.':
+        continue
     imglist = []
     predlist = []
 
@@ -47,6 +49,8 @@ for video in videolist:
     if len(images)<=clip_num:
         continue
     for imgname in images:
+        if imgname[0]=='.':
+            continue
         img = Image.open(os.path.join(DIR,'data',video,'mask',imgname))
         w,h = img.size
         img = np.array(img)
