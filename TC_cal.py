@@ -55,7 +55,7 @@ with open(os.path.join(DIR_,split),'r') as f:
 ###
 gpu=0
 model_raft = RAFT()
-to_load = torch.load('./RAFT/models/raft-things.pth-no-zip')
+to_load = torch.load('./RAFT_core/raft-things.pth-no-zip')
 new_state_dict = OrderedDict()
 for k, v in to_load.items():
     name = k[7:] # remove `module.`，表面从第7个key值字符取到最后一个字符，正好去掉了module.
