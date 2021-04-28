@@ -6,7 +6,7 @@ A pytorch implementation of the CVPR2021 paper "VSPW: A Large-scale Dataset for 
 
 ## Download VSPW dataset
 
-The VSPW dataset with extracted frames and masks is available [here](https://github.com/sssdddwww2/vspw_dataset_download).
+The VSPW dataset with extracted frames and masks is available [here](https://github.com/sssdddwww2/vspw_dataset_download). Now you can directly download [VSPW_480P dataset](https://github.com/sssdddwww2/vspw_dataset_download).
 
 ## Dependencies
  - Python 3.7
