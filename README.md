@@ -10,7 +10,7 @@ The VSPW dataset with extracted frames and masks is available [here](https://git
 
 ## Dependencies
  - Python 3.7
- - Pytorch 1.5
+ - Pytorch 1.3.1
  - Numpy
 
 Download the ImageNet-pretrained models at [this link](https://drive.google.com/file/d/1VFmObwlx4d_K7FOjFNk5LhEb3jP8_NaD/view?usp=sharing). Put it in the root folder and decompress it.
